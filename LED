@@ -1,0 +1,19 @@
+#define F_CPU 1000000 UL
+#include <avr/io.h>
+#include <util/delay.h>
+
+int main (){
+
+	DDRB = 0x00;
+	DDRC = 0b00111111;
+	DDRD = 0b11100011
+
+	PORTC = 0b00111111;
+	PORTD = 0b11100011;	
+
+	while(1){
+		asm("nope");
+	}	
+
+	return 0;
+}
